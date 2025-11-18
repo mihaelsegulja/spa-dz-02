@@ -49,7 +49,7 @@ void game_of_life::nextGen(){
 }
 
 void game_of_life::print(){
-
+    cout << "\033[" << ROWS << "A";
     for (size_t i = 0; i < ROWS; i++) {
         for (size_t j = 0; j < COLUMNS; j++) {
             if(_gen[i][j]) {
